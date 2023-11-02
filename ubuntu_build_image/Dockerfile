@@ -1,5 +1,5 @@
 FROM ubuntu:latest
 
-RUN apt update
+RUN apt update && apt install -y build-essential nasm
 
-RUN apt install -y build-essential
+WORKDIR /root
